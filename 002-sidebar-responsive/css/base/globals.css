@@ -1,0 +1,23 @@
+
+body {
+    font-family     : 'Recursive';
+    font-weight     : 400;
+    line-height     : 1.5;
+    letter-spacing  : 0.03ch;
+    min-height      : 100vh;
+    background-color: #f7f9fb;
+}
+
+
+@media screen and (min-width: 760px) {
+    body {
+        margin-left: 5rem;
+        transition: margin-left 300ms;
+    }
+}
+
+
+
+body.is-translate {
+    margin-left: 15rem;
+}

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="../font.css">
+    <link rel="stylesheet" href="./css/base/base.css">
+
+    <script defer src="./js/events.js"></script>
+</head>
+
+<body class="js-body">
+
+    <aside class="c-sidebar  js-sidebar" id="js-sidebar">
+        <header class="c-sidebar__brand  o-box-layout">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#2d2e2e" viewBox="0 0 256 256"
+                class="c-icon  c-sidebar__icon--control  js-sidebar__icon-control">
+                <path
+                    d="M181.66,133.66l-80,80a8,8,0,0,1-11.32-11.32L164.69,128,90.34,53.66a8,8,0,0,1,11.32-11.32l80,80A8,8,0,0,1,181.66,133.66Z">
+                </path>
+            </svg>
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#171617" viewBox="0 0 256 256"
+                class="c-sidebar__brand-logo  c-icon">
+                <path
+                    d="M116.17,107.1h0a16.75,16.75,0,0,0,23.66,0L171.1,75.82a16.72,16.72,0,0,0,0-23.65L139.83,20.89a16.75,16.75,0,0,0-23.66,0L84.9,52.17a16.72,16.72,0,0,0,0,23.65Zm-20-43.62,31.28-31.27a.71.71,0,0,1,1,0l31.28,31.27a.74.74,0,0,1,0,1L128.51,95.79a.72.72,0,0,1-1,0L96.21,64.51A.74.74,0,0,1,96.21,63.48Zm138.9,52.69L203.83,84.89a16.74,16.74,0,0,0-23.65,0L148.9,116.17a16.75,16.75,0,0,0,0,23.66l31.28,31.28h0a16.74,16.74,0,0,0,23.65,0l31.28-31.28A16.75,16.75,0,0,0,235.11,116.17ZM223.8,128.51l-31.28,31.28a.74.74,0,0,1-1,0l-31.28-31.28a.72.72,0,0,1,0-1l31.28-31.28a.74.74,0,0,1,1,0l31.28,31.28A.72.72,0,0,1,223.8,128.51ZM107.1,116.17,75.82,84.89a16.74,16.74,0,0,0-23.65,0L20.89,116.17a16.75,16.75,0,0,0,0,23.66l31.28,31.28h0a16.74,16.74,0,0,0,23.65,0l31.28-31.28A16.75,16.75,0,0,0,107.1,116.17ZM95.79,128.51,64.51,159.79a.74.74,0,0,1-1,0L32.2,128.51a.72.72,0,0,1,0-1L63.48,96.21a.74.74,0,0,1,1,0l31.28,31.28A.72.72,0,0,1,95.79,128.51Zm44,20.39a16.75,16.75,0,0,0-23.66,0L84.9,180.18a16.72,16.72,0,0,0,0,23.65l31.27,31.28h0a16.75,16.75,0,0,0,23.66,0l31.27-31.28a16.72,16.72,0,0,0,0-23.65Zm20,43.62-31.28,31.27a.71.71,0,0,1-1,0L96.21,192.52a.74.74,0,0,1,0-1l31.28-31.28a.72.72,0,0,1,1,0l31.28,31.28A.74.74,0,0,1,159.79,192.52Z">
+                </path>
+            </svg>
+        </header>
+
+        <nav class="c-sidebar__nav">
+            <ul class="c-sidebar__list">
+                <li class="c-sidebar__item">
+                    <a href="#" class="c-sidebar__link  o-box-layout">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#171617"
+                            viewBox="0 0 256 256" class="c-sidebar__link-icon">
+                            <path
+                                d="M240,208H224V115.55a16,16,0,0,0-5.17-11.78l-80-75.48a1.14,1.14,0,0,1-.11-.11,16,16,0,0,0-21.53,0l-.11.11L37.17,103.77A16,16,0,0,0,32,115.55V208H16a8,8,0,0,0,0,16H240a8,8,0,0,0,0-16ZM48,115.55l.11-.1L128,40l79.9,75.43.11.1V208H160V160a16,16,0,0,0-16-16H112a16,16,0,0,0-16,16v48H48ZM144,208H112V160h32Z">
+                            </path>
+                        </svg>
+
+                        <span class="c-sidebar__link-text">
+                            Dashboard
+                        </span>
+                    </a>
+                </li>
+
+                <li class="c-sidebar__item">
+                    <button class="c-sidebar__link  o-box-layout  c-sidebar__accordion-btn  js-accordion-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#171617"
+                            viewBox="0 0 256 256" class="c-sidebar__link-icon">
+                            <path
+                                d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24ZM74.08,197.5a64,64,0,0,1,107.84,0,87.83,87.83,0,0,1-107.84,0ZM96,120a32,32,0,1,1,32,32A32,32,0,0,1,96,120Zm97.76,66.41a79.66,79.66,0,0,0-36.06-28.75,48,48,0,1,0-59.4,0,79.66,79.66,0,0,0-36.06,28.75,88,88,0,1,1,131.52,0Z">
+                            </path>
+                        </svg>
+
+                        <span class="c-sidebar__link-text">
+                            Audience
+                        </span>
+
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#171617"
+                            viewBox="0 0 256 256" class="c-sidebar__icon--dropdown  c-icon  c-icon--dropdown">
+                            <path
+                                d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z">
+                            </path>
+                        </svg>
+                    </button>
+
+                    <ul class="c-sidebar__list  c-sidebar__sublist">
+                        <li class="c-sidebar__item  c-sidebar__subitem">
+                            <a href="#" class="c-sidebar__link  c-sidebar__sublink o-box-layout">
+                                <span class="c-sidebar__link-text">
+                                    Tech
+                                </span>
+                            </a>
+                        </li>
+
+                        <li class="c-sidebar__item  c-sidebar__subitem">
+                            <a href="#" class="c-sidebar__link  c-sidebar__sublink o-box-layout">
+                                <span class="c-sidebar__link-text">
+                                    Academy
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="c-sidebar__item">
+                    <a href="#" class="c-sidebar__link  o-box-layout">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#171617"
+                            viewBox="0 0 256 256" class="c-sidebar__link-icon">
+                            <path
+                                d="M216,40H40A16,16,0,0,0,24,56V200a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A16,16,0,0,0,216,40Zm0,160H40V56H216V200ZM184,96a8,8,0,0,1-8,8H80a8,8,0,0,1,0-16h96A8,8,0,0,1,184,96Zm0,32a8,8,0,0,1-8,8H80a8,8,0,0,1,0-16h96A8,8,0,0,1,184,128Zm0,32a8,8,0,0,1-8,8H80a8,8,0,0,1,0-16h96A8,8,0,0,1,184,160Z">
+                            </path>
+                        </svg>
+
+                        <span class="c-sidebar__link-text">
+                            Posts
+                        </span>
+                    </a>
+                </li>
+
+                <li class="c-sidebar__item">
+                    <a href="#" class="c-sidebar__link  o-box-layout">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#171617"
+                            viewBox="0 0 256 256" class="c-sidebar__link-icon">
+                            <path
+                                d="M208,32H184V24a8,8,0,0,0-16,0v8H88V24a8,8,0,0,0-16,0v8H48A16,16,0,0,0,32,48V208a16,16,0,0,0,16,16H208a16,16,0,0,0,16-16V48A16,16,0,0,0,208,32ZM72,48v8a8,8,0,0,0,16,0V48h80v8a8,8,0,0,0,16,0V48h24V80H48V48ZM208,208H48V96H208V208Zm-38.34-85.66a8,8,0,0,1,0,11.32l-48,48a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L116,164.69l42.34-42.35A8,8,0,0,1,169.66,122.34Z">
+                            </path>
+                        </svg>
+
+                        <span class="c-sidebar__link-text">
+                            Schedules
+                        </span>
+                    </a>
+                </li>
+
+                <li class="c-sidebar__item">
+                    <button class="c-sidebar__link  o-box-layout  c-sidebar__accordion-btn  js-accordion-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#171617"
+                            viewBox="0 0 256 256" class="c-sidebar__link-icon">
+                            <path
+                                d="M224,200h-8V40a8,8,0,0,0-8-8H152a8,8,0,0,0-8,8V80H96a8,8,0,0,0-8,8v40H48a8,8,0,0,0-8,8v64H32a8,8,0,0,0,0,16H224a8,8,0,0,0,0-16ZM160,48h40V200H160ZM104,96h40V200H104ZM56,144H88v56H56Z">
+                            </path>
+                        </svg>
+
+                        <span class="c-sidebar__link-text">
+                            Income
+                        </span>
+
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#171617"
+                            viewBox="0 0 256 256" class="c-sidebar__icon--dropdown  c-icon  c-icon--dropdown">
+                            <path
+                                d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z">
+                            </path>
+                        </svg>
+                    </button>
+
+                    <ul class="c-sidebar__list  c-sidebar__sublist">
+                        <li class="c-sidebar__item  c-sidebar__subitem">
+                            <a href="#" class="c-sidebar__link  c-sidebar__sublink o-box-layout">
+                                <span class="c-sidebar__link-text">
+                                    Earnings
+                                </span>
+                            </a>
+                        </li>
+
+                        <li class="c-sidebar__item  c-sidebar__subitem">
+                            <a href="#" class="c-sidebar__link  c-sidebar__sublink o-box-layout">
+                                <span class="c-sidebar__link-text">
+                                    Refunds
+                                </span>
+                            </a>
+                        </li>
+
+                        <li class="c-sidebar__item  c-sidebar__subitem">
+                            <a href="#" class="c-sidebar__link  c-sidebar__sublink o-box-layout">
+                                <span class="c-sidebar__link-text">
+                                    Declines
+                                </span>
+                            </a>
+                        </li>
+
+                        <li class="c-sidebar__item  c-sidebar__subitem">
+                            <a href="#" class="c-sidebar__link  c-sidebar__sublink o-box-layout">
+                                <span class="c-sidebar__link-text">
+                                    Payouts
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="c-sidebar__item">
+                    <a href="#" class="c-sidebar__link  o-box-layout">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#171617"
+                            viewBox="0 0 256 256" class="c-sidebar__link-icon">
+                            <path
+                                d="M173.66,98.34a8,8,0,0,1,0,11.32l-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35A8,8,0,0,1,173.66,98.34ZM232,128A104,104,0,1,1,128,24,104.11,104.11,0,0,1,232,128Zm-16,0a88,88,0,1,0-88,88A88.1,88.1,0,0,0,216,128Z">
+                            </path>
+                        </svg>
+
+                        <span class="c-sidebar__link-text">
+                            Tasks
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+
+    <main style="padding: 1.5rem;font-weight: 500; color: #475569; line-height: 1.5;">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius assumenda sunt deleniti consequatur in pariatur veniam eum. Delectus reprehenderit animi nesciunt atque vero laboriosam, fugit quos accusamus perferendis est dignissimos officia qui! In ratione eius quod ipsum, quae perferendis quos voluptas nam fuga! Error ab corporis maiores ullam facere culpa doloribus voluptate excepturi perferendis est, a fugiat exercitationem sunt iste? Debitis quo esse dicta. Eveniet et ullam impedit. Itaque, at! Debitis cupiditate, eveniet eos repudiandae iusto cumque ab harum doloremque placeat beatae magni suscipit necessitatibus? Incidunt blanditiis hic suscipit ullam? Recusandae in adipisci fugit assumenda asperiores a quas porro provident?
+    </main>
+
+
+    <button class="menu">
+        Menu
+    </button>
+
+
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+
+
+* {
+    margin    : 0;
+    padding   : 0;
+    box-sizing: border-box;
+    font      : inherit;
+    color     : inherit;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    list-style: none;
+}
+
+button {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    appearance: none;
+    font: inherit;
+    width: 100%;
+    cursor: pointer;
+}
+
+
+img,
+svg {
+    max-width: 100%;
+    object-fit: cover;
+    -o-object-fit: cover;
+    height: auto;
+}
+
+
