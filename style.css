@@ -10,8 +10,8 @@ body {
     background-color: #e0f2fe;
     min-height: 100vh;
     font-family: 'Recursive';
+    font-weight: 400;
     color: #475569;
-
     --header-height: 4rem;
 }
 
@@ -50,7 +50,7 @@ body {
 
 .mini-project__name {
     text-align: center;
-    font-size: 2rem;
+    font-size: 2.5rem;
     height: 4rem;
     line-height: 4rem;
     font-weight: 700;
