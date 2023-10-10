@@ -46,18 +46,22 @@ button {
 }
 
 .boxes {
-    display: flex;
-    flex-wrap: wrap;
+    --box-size: 80px;
+    --columns : 4;
+    --box-wrapper-size: calc(var(--box-size) * var(--columns));
+
+    display: grid;
+    grid-template-columns: repeat(var(--columns), var(--box-size));
     justify-content: space-around;
-    height: 400px;
-    width: 400px;
+    height: calc(var(--box-size) * var(--columns));
+    width: calc(var(--box-size) * var(--columns));
     position: relative;
     transition: 0.4s ease;
 }
 
 .boxes.big {
-    width: 480px;
-    height: 480px;
+    width: calc(var(--box-wrapper-size) + 100px);
+    height: calc(var(--box-wrapper-size) + 100px);
 }
 
 .boxes.big .box {
@@ -67,10 +71,10 @@ button {
 .box {
     background-image: url('https://media.giphy.com/media/EZqwsBSPlvSda/giphy.gif');
     background-repeat: no-repeat;
-    background-size: 400px 400px;
+    background-size: var(--box-wrapper-size) var(--box-wrapper-size);
     position: relative;
-    height: 100px;
-    width: 100px;
+    height: var(--box-size);
+    width: var(--box-size);
     transition: 0.4s ease;
 }
 
