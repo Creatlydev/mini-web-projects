@@ -1,28 +1,28 @@
 @font-face {
     font-family: 'Recursive';
+    src: url('./fonts/Recursive-Regular.ttf') format('trueType');
     font-style: normal;
     font-weight: 400;
     font-display: swap;
-    src: url('./fonts/Recursive-Regular.ttf') format('ttf');
 }
 @font-face {
     font-family: 'Recursive';
     font-style: normal;
     font-weight: 500;
     font-display: swap;
-    src: url('./fonts/Recursive-Medium.ttf') format('ttf');
+    src: url('./fonts/Recursive-Medium.ttf') format('trueType');
 }
 @font-face {
     font-family: 'Recursive';
     font-style: normal;
     font-weight: 600;
     font-display: swap;
-    src: url('./fonts/Recursive-SemiBold.ttf') format('ttf');
+    src: url('./fonts/Recursive-SemiBold.ttf') format('trueType');
 }
 @font-face {
     font-family: 'Recursive';
     font-style: normal;
     font-weight: 700;
     font-display: swap;
-    src: url('./fonts/Recursive-Bold.ttf') format('ttf');
+    src: url('./fonts/Recursive-Bold.ttf') format('trueType');
 }
