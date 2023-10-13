@@ -5,7 +5,7 @@ function getTimeLeft (deadline) {
   const timeLeft = (new Date(deadline) - now + 1000) / 1000
   const secondsLeft = ('0' + Math.floor(timeLeft % 60)).slice(-2)
   const minutesLeft = ('0' + Math.floor(timeLeft / 60 % 60)).slice(-2)
-  const hoursLeft = ('0' + Math.floor(timeLeft / 3600)).slice(-2)
+  const hoursLeft = ('0' + Math.floor(timeLeft / 3600 % 24)).slice(-2)
   const daysLeft = ('0' + Math.floor(timeLeft / (3600 * 24) % 7)).slice(-2)
   const weeksLeft = Math.floor(timeLeft / (3600 * 24 * 7))
 
@@ -43,7 +43,7 @@ function countDown (deadline, elem, finalMessage) {
 }
 
 countDown(
-  'Dec 31 2023 00:00:00 GMT-0500',
+  'Dec 24 2023 00:00:00 GMT-0500',
   'clock',
   'Feliz Navidad'
 )
