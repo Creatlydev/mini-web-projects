@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analog Clock</title>
+
+    <link rel="stylesheet" href="../font.css">
+    <link rel="stylesheet" href="./style.css">
+
+    <script src="./script.js" defer></script>
+</head>
+<body>
+
+    <div class="container">
+        <div class="clock">
+
+            <div class="clock__circle clock__circle--1" id="sc" style="--clr: #04FC43;">
+                <li class="clock__line"></li>
+            </div>
+            <div class="clock__circle clock__circle--2" id="mn" style="--clr: #0ec6ef;">
+                <li class="clock__line"></li>
+            </div>
+            <div class="clock__circle clock__circle--3" id="hr" style="--clr: #FF2972;">
+                <li class="clock__line"></li>
+            </div>
+
+            <span class="clock__number" style="--i: 1">
+                <b>1</b>
+            </span>
+            <span class="clock__number" style="--i: 2">
+                <b>2</b>
+            </span>
+            <span class="clock__number" style="--i: 3">
+                <b>3</b>
+            </span>
+            <span class="clock__number" style="--i: 4">
+                <b>4</b>
+            </span>
+            <span class="clock__number" style="--i: 5">
+                <b>5</b>
+            </span>
+            <span class="clock__number" style="--i: 6">
+                <b>6</b>
+            </span>
+            <span class="clock__number" style="--i: 7">
+                <b>7</b>
+            </span>
+            <span class="clock__number" style="--i: 8">
+                <b>8</b>
+            </span>
+            <span class="clock__number" style="--i: 9">
+                <b>9</b>
+            </span>
+            <span class="clock__number" style="--i: 10">
+                <b>10</b>
+            </span>
+            <span class="clock__number" style="--i: 11">
+                <b>11</b>
+            </span>
+            <span class="clock__number" style="--i: 12">
+                <b>12</b>
+            </span>
+        </div>
+
+        <!-- Digital clock -->
+        <div class="digital-clock">
+            <div class="hours" style="--clr: #FF2972;">00</div>
+            <div class="minutes" style="--clr: #0ec6ef;">00</div>
+            <div class="seconds" style="--clr: #04FC43;">00</div>
+            <div class="time-period">AM</div>
+        </div>
+    </div>
+
+</body>
+</html>
